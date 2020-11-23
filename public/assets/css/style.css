@@ -1,0 +1,379 @@
+@font-face {
+    font-family: "Nanum Gothic";
+    src: url("Nanum_Gothic/NanumGothic-Regular.ttf");
+}
+
+body {
+    background-color: white;
+    padding: 0;
+    font-family: 'Nanum Gothic', Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid #7f7f7f;
+}
+
+.bg-light {
+    background-color: #ffffff70!important;
+}
+
+a {
+    text-decoration: none;
+    color: #343a40;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    margin-top: 50px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: solid 1px #7f7f7f;
+    border-top: solid 1px #7f7f7f;
+    width: 25%;
+    padding: 15px 0 0 30px;
+}
+
+footer img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+footer .icons {
+    text-align: center;
+}
+
+footer .none {
+    border-right: 0;
+}
+
+.homeFirst {
+    background-image: url('../images/fond.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    padding: 150px 50px 30px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    text-shadow: 0px 0 1px black;
+}
+
+.homeFirst h3 {
+    font-style: italic;
+    align-self: flex-end;
+    color: black;
+}
+
+.homeSecond img {
+    width: 400px;
+}
+
+.title {
+    width: 400px;
+    text-align: center;
+}
+
+.block blockquote {
+    width: 500px;
+    padding: 20px;
+    text-shadow: 0px 0 1px black;
+    color: black;
+    background-color: #ffffff80;
+}
+
+
+.blockquote-footer {
+    background-color: #ffffff00;
+    color: black;
+}
+
+.logo {
+    width: 120px;
+    height: 80px;
+    align-self: start;
+}
+
+
+.homeSecond {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: inside;
+    margin-bottom: 200px;
+}
+
+
+.homeSecond div {
+    width: 50%;
+    text-align: center;
+    padding: 30px 150px 0 150px;
+    border-right: 2px solid #578922;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.homeSecond .right {
+    border: 0;
+}
+
+.homeThird {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.homeThird div {
+    width: 33%;
+    list-style: inside;
+    border-right: 2px solid #578922;
+    margin-bottom: 200px;
+}
+
+.homeThird .none {
+    border: 0;
+}
+
+
+.association {
+    padding-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.association div {
+    width: 60%;
+}
+
+.association div h1, h2, h4 {
+    text-align: center;
+    margin: 50px 0 50px 0;
+}
+
+.association p {
+    margin-bottom: 50px;
+}
+
+.association div h3 {
+    margin: 40px 0 40px 0;
+    text-align: center;
+}
+
+.imgAssociation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.imgAssociation img {
+    width: 500px;
+    border: 2px solid #578922;
+}
+
+.association .line {
+    display: flex;
+    width: 60%;
+    border: 0;
+    padding: 0;
+}
+
+.association .line div {
+    width: 50%;
+    height: 100px;
+    border-right:  2px solid #578922;
+    border-top: 2px solid #578922;;
+    border-bottom: 0;
+}
+
+.association .line-top {
+    display: flex;
+    width: 60%;
+    border: 0;
+    padding: 0;
+}
+
+.association .line-top div {
+    width: 50%;
+    height: 100px;
+    border-right:  2px solid #578922;
+    border-bottom: 2px solid #578922;
+}
+
+
+.association .line .none {
+    border: 0;
+    border-top: 2px solid #578922;
+}
+
+.association .line-top .none {
+    border-right: 0;
+
+}
+
+.association .team {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.association .team div {
+    width: 33%;
+    border-right: 2px solid #578922;
+    text-align: center;
+    margin: 50px 0 50px 0;
+    padding: 0 10px 0 10px;
+}
+
+.association .team .none {
+    border: 0;
+}
+
+.association .center {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.association blockquote {
+    width: 60%;
+}
+
+.association div .a {
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+}
+
+.actualities {
+    min-height: 100vh;
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.actualities .div {
+    width: 60%;
+    margin-bottom: 100px;
+}
+
+.actualities img {
+    margin-bottom: 100px;
+}
+
+.actualities .div .cross {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 50px 0 50px 0;
+}
+
+.actualities .div .cross div {
+    height: 20px;
+    width: 50%;
+}
+
+.actualities .cross .first {
+    border-bottom: 2px solid #578922;
+}
+
+.actualities .cross .right {
+    border-right: 2px solid #578922;
+}
+
+.joinUs, .donation {
+    min-height: 100vh;
+    margin-top: 150px;
+}
+
+.joinUs .first {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.joinUs .block {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 50px 100px 50px;
+}
+
+.joinUs .block div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+    padding: 30px 30px 30px 30px;
+    border-right: 2px solid #578922;
+}
+
+.joinUs .block .right {
+    border-right: 0;
+}
+
+.joinUs .block .bottom {
+    border-bottom: 2px solid #578922;
+}
+
+.adminHome, .adminActualities, .adminActions, .adminEgality, .adminConnect {
+    min-height: 100vh;
+    margin-top: 150px;
+}
+
+.adminConnect{
+    display: flex;
+    justify-content: center;
+}
+
+.adminConnect form {
+    width: 300px;
+    margin-top: 20px;
+}
+
+.error {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Tel + tablette : */
+@media (max-width: 980px) {
+
+footer {
+    flex-direction: column;
+}
+
+footer div {
+    width: 100%;
+    border-right: 0;
+    text-align: center;
+    padding: 15px 0 15px 0;
+}
+
+}
