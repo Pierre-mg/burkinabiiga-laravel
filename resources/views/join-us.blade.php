@@ -13,7 +13,7 @@
     <div class="bottom">
         <h3>Professionnels</h3>
         <p>Vous avez une entreprise et vous voulez faire une action solidaire ?</p>
-        <p>Vous pouvez nous aider ! Afin d'envoyer les colis au Burkina Faso nous avons besoin de fonds, bien sûr ces derniers sont récompensés par des contreparties (communication). C'est le principe de crowdfunding, pour participer, rendez-vous <a href="https://www.leetchi.com/c/burkina-biiga-pour-legalite-filles-et-garcons-a-lecole">ICI</a></p>
+        <p>Vous pouvez nous aider ! Afin d'envoyer les colis au Burkina Faso nous avons besoin de fonds, bien sûr ces derniers sont récompensés par des contreparties (communication). C'est le principe de crowdfunding, pour participer, rendez-vous <a href="https://www.leetchi.com/c/burkina-biiga-pour-legalite-filles-et-garcons-a-lecole" target="_blank">ICI</a></p>
         <h4>Projet</h4>
         <p>Vous pensez que nos initiatives peuvent intéresser votre établissement ou votre entreprise ? Contactez-nous pour organiser une collecte ou une action flash</p>
     </div>
@@ -30,7 +30,7 @@
     <div class="right">
         <h3>Particuliers</h3>
         <h4>Dons</h4>
-        <p>Chaque don compte ! Vous pouvez nous soutenir à hauteur de vos moyens ! Rendez-vous sur notre crowdfunding : <a href="https://www.leetchi.com/c/burkina-biiga-pour-legalite-filles-et-garcons-a-lecole">ICI</a>
+        <p>Chaque don compte ! Vous pouvez nous soutenir à hauteur de vos moyens ! Rendez-vous sur notre crowdfunding : <a href="https://www.leetchi.com/c/burkina-biiga-pour-legalite-filles-et-garcons-a-lecole" target="_blank">ICI</a>
         </p>
         <p>Vous pouvez également faire des dons de matériel : on a tous gardé des dizaines de stylos, trousses et cahiers de notre scolarité.</p>
         <h4>Partage</h4>

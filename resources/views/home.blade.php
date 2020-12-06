@@ -63,7 +63,7 @@
 
 
 <div>
-    <a href="https://www.leetchi.com/c/burkina-biiga-pour-legalite-filles-et-garcons-a-lecole"><h4>Dons</h4></a>
+    <a href="https://www.leetchi.com/c/burkina-biiga-pour-legalite-filles-et-garcons-a-lecole" target="_blank"><h4>Dons</h4></a>
     <p>Chacun de vos dons compte :
         <ul>
             <li>Don fiancier</li>

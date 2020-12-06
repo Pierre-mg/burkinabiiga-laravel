@@ -4,7 +4,7 @@
 
 <section class="actualities">
 
-<div class="imgAssociation">
+<div class="imgActuality">
     <img src="{{ url('assets/images/actu1.jpg') }}" alt="Photo">
 </div>
 
@@ -25,7 +25,7 @@
 @endforeach
 </div>
 
-<div class="imgAssociation">
+<div class="imgActuality">
     <img src="{{ url('assets/images/actu2.jpg') }}" alt="Photo">
 </div>
 

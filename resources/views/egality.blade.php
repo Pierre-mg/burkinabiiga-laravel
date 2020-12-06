@@ -8,6 +8,7 @@
     <img src="{{ url('assets/images/egality1.jpg') }}" alt="Photo">
 </div>
 
+
 <div class="line-top">
     <div></div>
     <div class="none"></div>
@@ -19,6 +20,8 @@
     <h3>{{$egality[0]->title}}</h3>
 
     <p>{!! nl2br($egality[0]->content) !!}</p>
+    <p><a href="https://www.plan-international.fr/info/actualites/news/2016-09-23-causes-et-consequences-des-inegalites-des-filles-face-leducation?fbclid=IwAR2_UVYD9n9fFSF0AMizl87j5zoeWfv9DyrWo7efp2bbwhuuPT6ixi8iDPA" target="_blank">Article de plan-international</a></p>
+
 </div>
 
 <div class="line">

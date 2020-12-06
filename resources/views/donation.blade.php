@@ -16,7 +16,7 @@
 
     <p>Ayant déjà reçu plus de 300 kilogrammes de manuels scolaires en moins de deux mois et espérant continuer sur cette voie,  nous avons calculé que pour faire une dizaine d'envois il nous faudrait un budget de 10 000 euros.</p>
 
-    <div class="a"><a href="https://www.leetchi.com/c/burkina-biiga-pour-legalite-filles-et-garcons-a-lecole">Dons</a></div>
+    <div class="a"><a href="https://www.leetchi.com/c/burkina-biiga-pour-legalite-filles-et-garcons-a-lecole" target="_blank">Dons</a></div>
 </div>
 
 <div class="line">

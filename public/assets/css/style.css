@@ -191,6 +191,17 @@ footer .none {
     border: 2px solid #578922;
 }
 
+.imgActuality {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.imgActuality img {
+    width: 300px;
+    border: 2px solid #578922;
+}
+
 .association .line {
     display: flex;
     width: 60%;

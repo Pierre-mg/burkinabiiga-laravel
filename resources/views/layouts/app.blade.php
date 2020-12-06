@@ -75,7 +75,7 @@
 </div>
 
 <div class="icons">
-    <p><a href="https://www.facebook.com/BurkinaBiiga2/"><img src="{{ url('assets/images/fb.svg') }}" alt="Icone Facebook"></a><a href="https://www.instagram.com/burkina_biiga/"><img src="{{ url('assets/images/inst.svg') }}" alt="Icone Instagram"></a></p>
+    <p><a href="https://www.facebook.com/BurkinaBiiga2/" target="_blank"><img src="{{ url('assets/images/fb.svg') }}" alt="Icone Facebook"></a><a href="https://www.instagram.com/burkina_biiga/" target="_blank"><img src="{{ url('assets/images/inst.svg') }}" alt="Icone Instagram"></a></p>
 </div>
 
 <div class="none">
