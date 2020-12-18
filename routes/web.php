@@ -58,18 +58,24 @@ Route::get('/donation', [
 //==========================
 
 Route::get('/admin/home', [
-    'uses' => 'App\Http\Controllers\MainController@adminHome', 'as'   => 'adminHome'
+    'as' => 'adminHome', 'uses' => 'App\Http\Controllers\MainController@adminHome',
+])->middleware('auth');
+
+//Home
+
+Route::get('/admin/home-modify', [
+    'as' => 'adminHomeModify', 'uses' => 'App\Http\Controllers\MainController@adminHomeModify'
 ])->middleware('auth');
 
 //Egality
 
 Route::get('/admin/egality', [
     'as' => 'adminEgality', 'uses' => 'App\Http\Controllers\EgalityController@adminEgality'
-])->middleware('auth')->middleware('auth');
+])->middleware('auth');
 
 Route::get('/admin/egality/{id}', [
     'as' => 'adminEgalitySection', 'uses' => 'App\Http\Controllers\EgalityController@adminEgalitySection'
-]);
+])->middleware('auth');
 
 Route::post('/admin/egality/{id}', [
     'as' => 'adminEgalitySectionEdit', 'uses' => 'App\Http\Controllers\EgalityController@adminEgalitySectionEdit'

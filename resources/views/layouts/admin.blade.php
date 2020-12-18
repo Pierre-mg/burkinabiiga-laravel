@@ -33,6 +33,9 @@
                         <a class="nav-link" href="{{route('adminHome')}}"><h5>Accueil</h5></a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="{{route('adminHomeModify')}}"><h5>Page d'accueil</h5></a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{{route('adminEgality')}}"><h5>Égalité fille / garçon</h5></a>
                     </li>
                     <li class="nav-item">

@@ -17,7 +17,7 @@
 <section class="homeSecond">
 
         <div>
-            <p>Née d’une rencontre entre Julien Pellet, Léa Robert et l’Abbé de la région de Kaya, Burkina Biiga est une association humanitaire à but non lucratif.</p>
+            <p>{!! nl2br($home[0]->content) !!}</p>
         </div>
         <div class="right">
             <img src="{{ url('assets/images/home1.JPG') }}" alt="Photo">
@@ -26,16 +26,11 @@
         <img src="{{ url('assets/images/home2.JPG') }}" alt="Photo">
         </div>
         <div class="right">
-            <p>Elle a deux objectifs principaux :
-                <ul>
-                    <li>Apporter une aide matérielle à des écoles de la ville de Kaya</li>
-                    <li>Garantir et promouvoir l'égalité filles garçons au sein de l'éducation</li>
-                </ul>
-            </p>
+            <p>{!! nl2br($home[1]->content) !!}</p>
         </div>
 
         <div>
-            <p>La région nord du Burkina Faso a subit ces dernières années de nombreuses attaques terroristes contre des églises, des mosquées et des écoles, donnant lieu à la déscolarisation de milliers d’enfants, une crise sanitaire et des migrations de plus en plus importantes. Une des premières villes touchées par ces phénomènes est Kaya.</p>
+            <p>{!! nl2br($home[2]->content) !!}</p>
         </div>
         <div class="right">
             <img src="{{ url('assets/images/home3.JPG') }}" alt="Photo">
@@ -44,12 +39,12 @@
             <img src="{{ url('assets/images/home4.JPG') }}" alt="Photo">
         </div>
         <div class="right">
-            <p>Il est important pour nous de préciser que les filles sont les premières touchées par ces crises et leur éducation en est fortement impactée.</p>
+            <p>{!! nl2br($home[3]->content) !!}</p>
         </div>
 
 
         <div>
-            <p>Cette association a donc pour but de monter des projets visant à aider l’abbé dans sa nouvelle mission de directeur des écoles de Kaya et ainsi remplir nos deux objectifs.</p>
+            <p>{!! nl2br($home[4]->content) !!}</p>
         </div>
 
         <div class="right">
