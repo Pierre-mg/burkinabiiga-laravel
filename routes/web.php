@@ -67,6 +67,14 @@ Route::get('/admin/home-modify', [
     'as' => 'adminHomeModify', 'uses' => 'App\Http\Controllers\MainController@adminHomeModify'
 ])->middleware('auth');
 
+Route::get('/admin/home/{id}', [
+    'as' => 'adminHomeSection', 'uses' => 'App\Http\Controllers\MainController@adminHomeSection'
+])->middleware('auth');
+
+Route::post('/admin/home/{id}', [
+    'as' => 'adminHomeSectionEdit', 'uses' => 'App\Http\Controllers\MainController@adminHomeSectionEdit'
+])->middleware('auth');
+
 //Egality
 
 Route::get('/admin/egality', [
