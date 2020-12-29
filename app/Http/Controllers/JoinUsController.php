@@ -10,7 +10,9 @@ class JoinUsController extends Controller
 {
     public function joinUs()
     {
-        return view('join-us');
+        $join['join'] = Join::all();
+
+        return view('join-us', $join);
     }
 
     public function adminJoinUs()
