@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Join;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
 
 
 class JoinUsController extends Controller
@@ -13,20 +13,37 @@ class JoinUsController extends Controller
         return view('join-us');
     }
 
-    // public function contact(Request $request)
-    // {
-    //     $validate = $this->validate($request, [
-    //         'lastname' => 'required',
-    //         'firstname' => 'required',
-    //         'email' => 'required|email',
-    //         'content' => 'required'
-    //     ]);
+    public function adminJoinUs()
+    {
+        $joinUs['joinUs'] = Join::all();
 
-    //     if ($validate) {
-    //         Mail::to('pierrem.garcia@gmail.com')
-    //         ->send($request);
-    //         ->view('join-us');
-    //     }
+        return view('admin/joinUs', $joinUs);
+    }
 
-    // }
+    public function adminJoinUsSection($id)
+    {
+         $joinUs['joinUs'] = Join::find($id);
+
+         return view('admin/joinUs-section', $joinUs);
+    }
+
+    public function adminJoinUsSectionEdit(Request $request, $id)
+    {
+        $joinUs = Join::find($id);
+
+        $joinUs->title = $request->input('title');
+        $joinUs->content = $request->input('content');
+
+        $success = $joinUs->save();
+
+        if (!$success) {
+            return redirect()->route('adminJoinUsSection', ['id' => $id]);
+            exit;
+         }
+
+        return redirect()->route('adminJoinUs');
+        exit;
+    }
+
+
 }

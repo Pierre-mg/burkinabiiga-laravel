@@ -129,6 +129,20 @@ Route::post('/admin/actualities/delete/{id}', [
     'as' => 'adminActualitiesDelete', 'uses' => 'App\Http\Controllers\ActualitiesController@adminActualitiesDelete'
 ])->middleware('auth');
 
+//JoinUS
+
+Route::get('/admin/join-us', [
+    'as' => 'adminJoinUs', 'uses' => 'App\Http\Controllers\JoinUsController@adminJoinUs'
+])->middleware('auth');
+
+Route::get('/admin/join-us/{id}', [
+    'as' => 'adminJoinUsSection', 'uses' => 'App\Http\Controllers\JoinUsController@adminJoinUsSection'
+])->middleware('auth');
+
+Route::post('/admin/join-us/{id}', [
+    'as' => 'adminJoinUsSectionEdit', 'uses' => 'App\Http\Controllers\JoinUsController@adminJoinUsSectionEdit'
+])->middleware('auth');
+
 // CONNECT
 
 Route::get('/admin/login', [

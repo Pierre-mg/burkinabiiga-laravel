@@ -45,8 +45,12 @@
                         <a class="nav-link" href="{{route('adminActualities')}}"><h5>Actualités</h5></a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="{{route('adminJoinUs')}}"><h5>Nous rejoindre</h5></a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{{route('adminLogOut')}}"><h5>Déconnexion</h5></a>
                     </li>
+
                 </ul>
             </div>
         </div>
