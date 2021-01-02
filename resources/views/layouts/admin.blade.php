@@ -41,16 +41,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('adminActualities')}}"><h5>Actualités</h5></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('adminJoinUs')}}"><h5>Nous rejoindre</h5></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('adminDonation')}}"><h5>Faire un don</h5></a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plus
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{route('adminJoinUs')}}"><h5>Nous rejoindre</h5></a>
+                            <a class="dropdown-item" href="{{route('adminDonation')}}"><h5>Faire un don</h5></a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('adminLogOut')}}"><h5>Déconnexion</h5></a>
                     </li>
-
                 </ul>
             </div>
         </div>

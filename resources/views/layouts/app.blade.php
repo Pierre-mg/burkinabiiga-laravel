@@ -48,6 +48,7 @@
           <a class="dropdown-item" href="{{route('join-us')}}"><h5>Nous rejoindre</h5></a>
           <a class="dropdown-item" href="{{route('donation')}}"><h5>Faire un don</h5></a>
         </div>
+        </li>
     </ul>
   </div>
 </nav>
