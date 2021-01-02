@@ -75,6 +75,21 @@ Route::post('/admin/home/{id}', [
     'as' => 'adminHomeSectionEdit', 'uses' => 'App\Http\Controllers\MainController@adminHomeSectionEdit'
 ])->middleware('auth');
 
+//Association
+
+Route::get('/admin/association', [
+    'as' => 'adminAssociation', 'uses' => 'App\Http\Controllers\AssociationController@adminAssociation'
+])->middleware('auth');
+
+Route::get('/admin/association/{id}', [
+    'as' => 'adminAssociationSection', 'uses' => 'App\Http\Controllers\AssociationController@adminAssociationSection'
+])->middleware('auth');
+
+Route::post('/admin/association/{id}', [
+    'as' => 'adminAssociationSectionEdit', 'uses' => 'App\Http\Controllers\AssociationController@adminAssociationSectionEdit'
+])->middleware('auth');
+
+
 //Egality
 
 Route::get('/admin/egality', [

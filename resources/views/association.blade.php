@@ -10,21 +10,11 @@
 </div>
 
 <div>
-    <h1>Burkina Biiga - Enfants du Burkina Fasso</h1>
+    <h1>{{ $association[0]->title }}</h1>
+    <p>{!! nl2br($association[0]->content) !!}</p>
 
-    <p>Burkina Biiga est une association à but non lucratif. Née d’une rencontre avec l’Abbé du diocèse de Kaya : Lambert Sawadogo ; Léa Robert et Julien Pellet. M. Sawadogo nous a exposé la situation précaire dans laquelle se trouve le Burkina Faso, tant au niveau sanitaire qu’au niveau éducatif. Il nous a également fait part d'un constat alarmant sur l'éducation des filles : en effet en temps de migrations l'éducation des jeunes filles n'est plus une priorité et ce sont les premières touchées par la déscolarisation Suite à ce récit et des recherches complémentaires, nous avons décidé de l’aider et de créer l’association.</p>
-
-    <p>Burkina Biiga est une association qui cherche à aider les enfants réfugiés ou résidents, de la ville de Kaya au Burkina Faso, en améliorant leurs conditions d’éducation. Nous souhaitons également permettre aux jeunes filles de la ville de Kaya de continuer à aller à l'école ou de pouvoir y repartir.</p>
-
-    <p> Nous avons choisi de nommer notre association Burkina Biiga car notre priorité est les enfants et qu'il nous semblait important que cela soit signifié dans le nom de notre association. En effet "biiga" signifie enfant en mooré, une des langues principales du Burkina Faso, ce qui tout naturellement a donné Burkina Biiga.</p>
-
-    <p>Nous avons pu constaté que la ville de Kaya a connue ces dernières années des difficultés car des milliers de burkinabés fuyant les attaques de DAESH dans le nord du pays y sont venus se réfugier. De fait certains services ont du mal à être assurés, c'est le cas de l'éducation.</p>
-
-    <p>Par ce projet, nous avons à coeur de promouvoir deux valeurs : l'humanité, l'inclusion et par dessus tout l'égalité des sexes.</p>
-
-    <h3>Pourquoi l'éducation ?</h3>
-
-    <p>Nous avons tous les deux eu la chance de pouvoir étudier dans de très bonnes conditions, or ce n’est pas le cas de tous les enfants dans le monde. Plus particulièrement, nous trouvons injuste le fait que des enfants qui ont toujours été scolarisés ne le soient plus, à cause de problèmes tels que le terrorisme d'une part, et de problèmes logistiques d'autre part. Selon le droit international chaque enfant a droit à l'éducation et devrait voir ce droit appliqué et respecté. Ainsi, la rencontre avec l’Abbé a été pour nous l’occasion d’agir concrètement pour faire valoir ce droit fondamental.</p>
+    <h3>{{ $association[1]->title }}</h3>
+    <p>{!! nl2br($association[1]->content) !!}</p>
 </div>
 
 <div class="line">
@@ -43,32 +33,10 @@
 
 
 <div>
-    <h2>Situation au Burkina Fasso</h2>
-
-    <p>Du fait de l'instabilité de la région sahélienne, le pays subit depuis 2016 les attaques de DAESH et d'autres groupes terroristes de la région, ces attaques sont amplifiées dans le nord du pays ainsi qu'au niveau des régions frontalières.</p>
-
-    <h3>A qui s'attaque DAECH ? </h3>
-
-    <p>A tous les lieux de cultes qu'ils soient chrétiens ou musulmans. Les écoles sont également ciblées, les professeurs y sont menacés, kidnappés et parfois assassinés. Le groupe terroriste réclame en effet que l'école soit faite en arabe et non pas en français qui est la langue officielle du pays.</p>
-
-    <h3>Quel est le résultat de ces attaques à répétitions ?</h3>
-
-    <p><ul>
-        <li>Des migrations forcées vers les villes du centre et du sud du pays et donc vers Kaya. Sous la menace terroriste des milliers de personnes ont fuit la zone laissant derrière eux : maison, propriété, agriculture, etc.</li>
-        <li>Une crise migratoire</li>
-        <li>Une crise sanitaire</li>
-        <li>Une crise éducative : en cause la fermeture de milliers d'écoles.</li>
-    </ul></p>
-
-    <h3>Quelques chiffres :</h3>
-
-    <p><ul>
-        <li>289 000 réfugiés depuis 2015</li>
-        <li>2000 écoles fermées</li>
-        <li>Des milliers d'enfants privés d'éducation</li>
-        <li>Plus de 1500 personnes assassinées</li>
-        <li>Ces chiffres sont en constantes augmentations car les attentats se poursuivent de jour en jour.</li>
-    </ul></p>
+    <?php for($i = 2; $i <= 5; $i++) :  ?>
+    <h3>{{ $association[$i]->title }}</h3>
+    <p>{!! nl2br($association[$i]->content) !!}</p>
+    <?php endfor;  ?>
 </div>
 
 <div class="line">
@@ -86,11 +54,8 @@
 </div>
 
 <div>
-    <h2>Notre intermédiaire</h2>
-
-    <h3>Lambert Sawadogo</h3>
-
-    <p>Directeur des écoles du diocèse de kaya, dévoué et bienveillant, il est très impliqué et influant dans la ville de Kaya. Il agit au quotidien sans distinction de religion, en partenariat avec les Imams de sa région, pour luter contre les multiples attaques terroristes ciblées envers les écoles, les mosquées et les églises du Burkina Faso. Il veille à la scolarisation des enfants et soutien les villages dans des projets sanitaires comme la construction de puits. Ce bienfaiteur est aujourd’hui notre seul et unique intermédiaire sur place ce qui fait notre force car nous savons exactement avec qui nous traitons. Cependant notre équipe devrait s'agrandir afin de pouvoir honorer tous nos envois.</p>
+    <h3>{{ $association[6]->title }}</h3>
+    <p>{!! nl2br($association[6]->content) !!}</p>
 </div>
 
 <div class="line">
