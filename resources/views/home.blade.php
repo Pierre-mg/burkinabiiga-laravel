@@ -22,11 +22,15 @@
         <div class="right">
             <img src="{{ url('assets/images/home1.JPG') }}" alt="Photo">
         </div>
-        <div>
-        <img src="{{ url('assets/images/home2.JPG') }}" alt="Photo">
+        <div class="mobile-off">
+            <img src="{{ url('assets/images/home2.JPG') }}" alt="Photo">
         </div>
         <div class="right">
             <p>{!! nl2br($home[1]->content) !!}</p>
+        </div>
+
+        <div class="desktop-off">
+            <img src="{{ url('assets/images/home2.JPG') }}" alt="Photo">
         </div>
 
         <div>
@@ -35,13 +39,16 @@
         <div class="right">
             <img src="{{ url('assets/images/home3.JPG') }}" alt="Photo">
         </div>
-        <div>
+        <div class="mobile-off">
             <img src="{{ url('assets/images/home4.JPG') }}" alt="Photo">
         </div>
         <div class="right">
             <p>{!! nl2br($home[3]->content) !!}</p>
         </div>
 
+        <div class="desktop-off">
+            <img src="{{ url('assets/images/home4.JPG') }}" alt="Photo">
+        </div>
 
         <div>
             <p>{!! nl2br($home[4]->content) !!}</p>
