@@ -30,9 +30,6 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('adminHome')}}"><h5>Accueil</h5></a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="{{route('adminHomeModify')}}"><h5>Page d'accueil</h5></a>
                     </li>
                     <li class="nav-item">
@@ -46,6 +43,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('adminJoinUs')}}"><h5>Nous rejoindre</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('adminDonation')}}"><h5>Faire un don</h5></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('adminLogOut')}}"><h5>Déconnexion</h5></a>

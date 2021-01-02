@@ -143,6 +143,20 @@ Route::post('/admin/join-us/{id}', [
     'as' => 'adminJoinUsSectionEdit', 'uses' => 'App\Http\Controllers\JoinUsController@adminJoinUsSectionEdit'
 ])->middleware('auth');
 
+//Donation
+
+Route::get('/admin/donation', [
+    'as' => 'adminDonation', 'uses' => 'App\Http\Controllers\DonationController@adminDonation'
+])->middleware('auth');
+
+Route::get('/admin/donation/{id}', [
+    'as' => 'adminDonationSection', 'uses' => 'App\Http\Controllers\DonationController@adminDonationSection'
+])->middleware('auth');
+
+Route::post('/admin/donation/{id}', [
+    'as' => 'adminDonationSectionEdit', 'uses' => 'App\Http\Controllers\DonationController@adminDonationSectionEdit'
+])->middleware('auth');
+
 // CONNECT
 
 Route::get('/admin/login', [
