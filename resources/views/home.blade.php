@@ -65,28 +65,18 @@
 
 
 <div>
-    <a href="https://www.leetchi.com/c/burkina-biiga-pour-legalite-filles-et-garcons-a-lecole" target="_blank"><h4>Dons</h4></a>
-    <p>Chacun de vos dons compte :
-        <ul>
-            <li>Don fiancier</li>
-            <li>Don matériel</li>
-        </ul>
-    </p>
+    <a href="https://www.leetchi.com/c/burkina-biiga-pour-legalite-filles-et-garcons-a-lecole" target="_blank"><h4>{{ ($homefooter[0]->title) }}</h4></a>
+    <p>{!! nl2br($homefooter[0]->content) !!}</p>
 </div>
 
 <div>
-    <a href="<?= route('join-us'); ?>"><h4>Rejoignez-nous</h4></a>
-    <p><ul>
-        <li>Participation aux collectes de matériel</li>
-        <li>Parlez de nous !</li>
-        <li>Rejoignez nous sur les réseaux-sociaux </li>
-    </ul></p>
+    <a href="<?= route('join-us'); ?>"><h4>{{ ($homefooter[1]->title) }}</h4></a>
+    <p>{!! nl2br($homefooter[1]->content) !!}</p>
 </div>
 
 <div class="none">
-    <a href="<?= route('actions'); ?>"><h4>Mission</h4></a>
-    <p>Récolter du matériel scolaire afin de l'envoyer à Kaya au Burkina Faso</p>
-    <p>Promouvoir l'égalité filles garçons à l'école</p>
+    <a href="<?= route('actions'); ?>"><h4>{{ ($homefooter[2]->title) }}</h4></a>
+    <p>{!! nl2br($homefooter[2]->content) !!}</p>
 </div>
 
 </section>

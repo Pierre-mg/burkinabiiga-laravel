@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Home;
+use App\Models\Homefooter;
 use Illuminate\Http\Request;
 
 
@@ -11,6 +12,7 @@ class MainController extends Controller
     public function home()
     {
         $home['home'] = Home::all();
+        $home['homefooter'] = Homefooter::all();
 
         return view('home', $home);
     }
@@ -48,6 +50,40 @@ class MainController extends Controller
          }
 
         return redirect()->route('adminHomeModify');
+        exit;
+    }
+
+    //Homefooter
+
+    public function adminHomefooterModify()
+    {
+        $homefooter['homefooter'] = Homefooter::all();
+
+        return view('admin/homefooter-modify', $homefooter);
+    }
+
+    public function adminHomefooterSection($id)
+    {
+        $homefooter['homefooter'] = Homefooter::find($id);
+
+        return view('admin/homefooter-section', $homefooter);
+    }
+
+    public function adminHomefooterSectionEdit(Request $request, $id)
+    {
+        $homefooter = Homefooter::find($id);
+
+        $homefooter->title = $request->input('title');
+        $homefooter->content = $request->input('content');
+
+        $success = $homefooter->save();
+
+        if (!$success) {
+            return redirect()->route('adminHomefooterSection', ['id' => $id]);
+            exit;
+         }
+
+        return redirect()->route('adminHomefooterModify');
         exit;
     }
 }

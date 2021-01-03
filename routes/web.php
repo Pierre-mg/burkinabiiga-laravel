@@ -75,6 +75,20 @@ Route::post('/admin/home/{id}', [
     'as' => 'adminHomeSectionEdit', 'uses' => 'App\Http\Controllers\MainController@adminHomeSectionEdit'
 ])->middleware('auth');
 
+//Homefooter
+
+Route::get('/admin/homefooter-modify', [
+    'as' => 'adminHomefooterModify', 'uses' => 'App\Http\Controllers\MainController@adminHomefooterModify'
+])->middleware('auth');
+
+Route::get('/admin/homefooter/{id}', [
+    'as' => 'adminHomefooterSection', 'uses' => 'App\Http\Controllers\MainController@adminHomefooterSection'
+])->middleware('auth');
+
+Route::post('/admin/homefooter/{id}', [
+    'as' => 'adminHomefooterSectionEdit', 'uses' => 'App\Http\Controllers\MainController@adminHomefooterSectionEdit'
+])->middleware('auth');
+
 //Association
 
 Route::get('/admin/association', [
