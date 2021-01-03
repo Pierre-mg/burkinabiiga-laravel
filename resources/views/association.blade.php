@@ -77,21 +77,24 @@
   <h2>Notre équipe</h2>
 <div  class="team">
     <div>
-        <h3>Léa Robert</h3>
-        <p>Présidente de l'association, elle est également en charge de la communication et de la gestion des projets.</p>
-        <p><a href="tel:+33685849213">Tél : 06 85 84 92 13</a>
-        <a href="mailto:burkinabiiga1@gmail.com">burkinabiiga1@gmail.com</a></p>
+        <h3>{{ $associationteam[0]->name }}</h3>
+        <p>{!! nl2br($associationteam[0]->content) !!}</p>
+        <p>{{ $associationteam[0]->tel }}</p>
+        <p>{{ $associationteam[0]->email }}</p>
     </div>
 
     <div>
-        <h3>Julien Pellet</h3>
-        <p>Vice-président de l'association, il s'occupe également du pôle trésorerie et des partenariats.</p>
-        <p><a href="tel:+33640739860">Tél : 06 40 73 98 60</a></p>
+        <h3>{{ $associationteam[1]->name }}</h3>
+        <p>{!! nl2br($associationteam[1]->content) !!}</p>
+        <p>{{ $associationteam[1]->tel }}</p>
+        <p>{{ $associationteam[1]->email }}</p>
     </div>
 
     <div class="none">
-        <h3>Lambert Sawadogo</h3>
-        <p>Lambert est notre intermédiaire sur place et nous aide également dans la gestion des projets.</p>
+        <h3>{{ $associationteam[2]->name }}</h3>
+        <p>{!! nl2br($associationteam[2]->content) !!}</p>
+        <p>{{ $associationteam[2]->tel }}</p>
+        <p>{{ $associationteam[2]->email }}</p>
     </div>
 </div>
     <h3 class="center">Et une armée de bénévoles super motivé.e.s</h3>

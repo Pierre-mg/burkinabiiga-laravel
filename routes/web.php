@@ -103,6 +103,20 @@ Route::post('/admin/association/{id}', [
     'as' => 'adminAssociationSectionEdit', 'uses' => 'App\Http\Controllers\AssociationController@adminAssociationSectionEdit'
 ])->middleware('auth');
 
+//Associationteam
+
+Route::get('/admin/associationteam', [
+    'as' => 'adminAssociationteam', 'uses' => 'App\Http\Controllers\AssociationController@adminAssociationteam'
+])->middleware('auth');
+
+Route::get('/admin/associationteam/{id}', [
+    'as' => 'adminAssociationteamSection', 'uses' => 'App\Http\Controllers\AssociationController@adminAssociationteamSection'
+])->middleware('auth');
+
+Route::post('/admin/associationteam/{id}', [
+    'as' => 'adminAssociationteamSectionEdit', 'uses' => 'App\Http\Controllers\AssociationController@adminAssociationteamSectionEdit'
+])->middleware('auth');
+
 
 //Egality
 
